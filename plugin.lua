@@ -147,7 +147,7 @@ function html_conv(msg)
 		char0 = '<?php\necho "'
 		char3 = '\\n";\necho "'
 		char4 = '";\n?>'
-		char5 = '<!--\nhttp://telegram.me/UmbrellaTeam\nUmbrella Team and shayan soft Co. Group\n//-->'
+		char5 = '<!--\n#MasiH [@iborn] soft Co. Group\n//-->'
 		dl_file("temp/dl"..msg.from.id..".htm", msg.document.file_id)
 		file = io.open("temp/dl"..msg.from.id..".htm", "r"):read("*all")
 		input = file:gsub("\r", "")
@@ -163,7 +163,7 @@ function html_conv(msg)
 		char0 = 'document.writeln("'
 		char3 = '");\ndocument.writeln("'
 		char4 = '");'
-		char5 = '// http://telegram.me/UmbrellaTeam\n// Umbrella Team and shayan soft Co. Group'
+		char5 = '// #MasiH [@iborn] soft Co. Group'
 		dl_file("temp/dl"..msg.from.id..".htm", msg.document.file_id)
 		file = io.open("temp/dl"..msg.from.id..".htm", "r"):read("*all")
 		input = file:gsub("\r", "")
@@ -180,7 +180,7 @@ function html_conv(msg)
 		char0 = '<script type="text/javascript">\ndocument.writeln("'
 		char3 = '");\ndocument.writeln("'
 		char4 = '");\n</script>'
-		char5 = '<!--\nhttp://telegram.me/UmbrellaTeam\nUmbrella Team and shayan soft Co. Group\n//-->'
+		char5 = '<!--\n#MasiH [@iborn] soft Co. Group\n//-->'
 		dl_file("temp/dl"..msg.from.id..".htm", msg.document.file_id)
 		file = io.open("temp/dl"..msg.from.id..".htm", "r"):read("*all")
 		input = file:gsub("\r", "")
@@ -195,7 +195,7 @@ function html_conv(msg)
 	elseif users[userid].sub == 6 then
 		dl_file("temp/dl"..msg.from.id..".htm", msg.document.file_id)
 		file = io.open("temp/dl"..msg.from.id..".htm", "r"):read("*all")
-		text = "<!--\n	Umbrella Team & shayan soft Co. Group\n\n	Maked by Umbrella Bot\n\n	Website: www.Umbrella.shayan-soft.ir\n	Channel: telegram.me/umbrellateam\n	Admin: Engineer Shayan Ahmadi\n	(telegram.me/shayan_soft)-->\n"
+		text = "<!--\n	#MasiH [@iborn] soft Co. Group. Group\n\n	Maked by @iborn\n\n	Website: www.Umbrella.shayan-soft.ir\n	Channel: telegram.me/\n	Admin: #MasiH [@iborn]\n	(telegram.me/iborn)-->\n"
 		..'<SCRIPT language = "vbscript">\nOn Error Resume Next\nIf Lcase(Left(Right(window.location, 4), 2)) = ".ht" And Lcase(Left(window.location, 5)) <> "file:" Then\nMsgBox "This application must be run from your hard drive. Save it there first."\nwindow.navigate "about:blank"\nEnd If\nOn Error Goto 0\n</script><script language="vbscript">\n'
 		.."'Umbrella Team\n"..[[</script><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><script LANGUAGE="VBScript">Self.ResizeTo 800,600]]
 		..[[</script><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="x-ua-compatible" content="ie=9"><title>Umbrella Bot]]
@@ -219,7 +219,7 @@ function html_conv(msg)
 			x=i-1
 			text = text..'$code['..x..'] = "'..tab[i]..'";\n'
 		end
-		text = text..'for ($i=0;$i<scalar(@code);$i++) {print($code[$i]."\\n");}\n<!--\nhttp://telegram.me/UmbrellaTeam\nUmbrella Team and shayan soft Co. Group\n//-->'
+		text = text..'for ($i=0;$i<scalar(@code);$i++) {print($code[$i]."\\n");}\n<!--\n#MasiH [@iborn] soft Co. Group\n//-->'
 		file = io.open("temp/index.aspx", "w")
 		file:write(text)
 		file:flush()
@@ -667,37 +667,37 @@ function style(msg)
 `This characters is styles commands...`
 
 For Write Bold Word:
-     `*`Umbrella`*` or <b>Umbrella</b> = *Umbrella*
+     `*`Changer`*` or <b>Changer</b> = *Changer*
 	
 For Write Italic Word:
-     `_`Umbrella`_` or <i>Umbrella</i> = _Umbrella_
+     `_`Changer`_` or <i>Changer</i> = _Changer_
 	
 For Write Code Word:
-     *`*Umbrella*`* or <c>Umbrella</c> = `Umbrella`
+     *`*Changer*`* or <c>Changer</c> = `ChangerChanger`
 	 
 For Write Hyper Link:
-     `[`Umbrella`](`umbrella.shayan-soft.ir`)` or
-     <a>Umbrella</au>umbrella.shayan-soft.ir</u> = [Umbrella](umbrella.shayan-soft.ir)
+     `[`Changer`](`t.me/ChangerRobot`)` or
+     <a>Changer</au>t.me/ChangerRobot</u> = [Changer](t.me/ChangerRobot)
 	 
 You can use all methods in a text:
-     `*`Umbrella`*`
-     `_`Umbrella`_`
-     *`*Umbrella*`*
-     `[`Umbrella`](`umbrella.shayan-soft.ir`)`
+     `*`Changer`*`
+     `_`Changer`_`
+     *`*Changer*`*
+     `[`Changer`](`t.me/ChangerRobot`)`
 or
-     <b>Umbrella</b>
-     <i>Umbrella</i>
-     <c>Umbrella</c>
-     <a>Umbrella</au>umbrella.shayan-soft.ir</u>
+     <b>Changer</b>
+     <i>Changer</i>
+     <c>Changer</c>
+     <a>Changer</au>t.me/ChangerRobot</u>
 =
-     *Umbrella*
-     _Umbrella_
-     `Umbrella`
-     [Umbrella](umbrella.shayan-soft.ir)
+     *Changer*
+     _Changer_
+     `Changer`
+     [Changer](t.me/ChangerRobot)
 ]]
 		return send_msg(msg.from.id, text, true)
 	elseif msg.text:lower() == "markdown example" then
-		return send_msg(msg.from.id, "Normal: Umbrella\nBold: *Umbrella*\nItalic: _Umbrella_\nCoder: `Umbrella`\nHyper Link: [Umbrella](umbrella.shayan-soft.ir)", true)
+		return send_msg(msg.from.id, "Normal: Changer\nBold: *Changer*\nItalic: _Changer_\nCoder: `Changer`\nHyper Link: [Changer](t.me/ChangerRobot)", true)
 	else
 		local text = msg.text:gsub("<b>", "*")
 		local text = text:gsub("</b>", "*")
@@ -1147,8 +1147,8 @@ Text>File: `make text file`
 Text>Hash-B64: `encode hash base 64`
 
 Hash-B64>Text: `decode hash base 64`]]
-	about_key = {{{text = "Website" , url = "http://Umbrella.shayan-soft.ir"}},{{text = "Channel" , url = "https://telegram.me/UmbrellaTeam"}},{{text = "Robot" , url = "https://telegram.me/UmbreIIaBot"}},{{text = "Instagram" , url = "https://instagram.com/UmbrellaTeam"}},{{text = "Messanger Bot" , url = "https://telegram.me/shayansoftBot"}},{{text = "Admin" , url = "https://telegram.me/shayan_soft"}}}
-	about_txt = "*(Wizard) Jadu Robot* v"..bot_version.."\n_Wizard converter, maker, changer and editor robot._\n\n`Made in Umbrella Team and Powered by shayan soft Co. Group`\nProgrammer and Idea:\n[Engineer Shayan Ahmadi](https://instagram.com/shayan_soft)\nDesigner and Logo:\n[Mir Hoseyn Bayatpur](https://telegram.me/miro3ein)\nSpecial thanks to:\n[Parsa Daneshvar](https://telegram.me/prsrobot)"
+	about_key = {{{text = "Channel" , url = "https://telegram.me/"}},{{text = "Robot" , url = "https://telegram.me/ChangerRobot"}},{{text = "Instagram" , url = "https://instagram.com/i.masiha"}},{{text = "Messanger Bot" , url = "https://telegram.me/ibornBot"}},{{text = "Admin" , url = "https://telegram.me/iborn"}}}
+	about_txt = "*(Wizard) Changer Robot* v"..bot_version.."\n_Wizard converter, maker, changer and editor robot._\n\n`Made by #MasiH [@iborn] soft Co. Group`\nProgrammer and Idea:\n[#MasiH](https://instagram.com/iborn)\nDesigner and Logo:\nSpecial thanks to:\n[mohammad](https://telegram.me/Mamad_joker_kafar)"
 	start_txt = "*Welcome to "..bot.first_name.."*\n`This robot is Free for ever...\nIn this robot you can Convert, Make, Edit and Change Files...`"
 	keyboard = {
 		{"About","Help"},
